@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Альпака генератор</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <div class="header__logo-container">
+                <a class="header__logo-link" href="https://github.com/PogodiPostoi" target="_blank">
+                    <div class="header__logo-text">
+                        PogodiPostoi
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <img src="img/ic-menu.svg" alt="menu button" class="header__menu-button-img">
+            </label>
+            <nav class="menu__box">
+                <ul>
+                    <li><a class="menu__item" href="https://github.com/PogodiPostoi" target="_blank">Профиль Github</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h1>Alpaca generator</h1>
+        <div class="alpaca">
+            <div class="alpaca__container">
+                <img class="alpaca__img-background" src="img/backgrounds/blue70.png" alt="">
+                <img class="alpaca__img-acessories" src="" alt="" >
+                <img class="alpaca__img-hair" src="img/hair/default.png" alt="">
+                <img class="alpaca__img-ears" src="img/ears/default.png" alt="">
+                <img class="alpaca__img-neck" src="img/neck/default.png" alt="">
+                <img class="alpaca__img-eyes" src="img/eyes/default.png" alt="">
+                <img class="alpaca__img-nose" src="img/nose.png" alt="">
+                <img class="alpaca__img-leg" src="img/leg/default.png" alt="">
+                <img class="alpaca__img-mouth" src="img/mouth/default.png" alt="">
+            </div>
+            <div class="alpaca__buttons">
+                <button class="button" id="random">Случайно</button>
+                <button class="button" id="download">Скачать</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
