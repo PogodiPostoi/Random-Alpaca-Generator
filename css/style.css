@@ -74,22 +74,22 @@ body {
 
     /*fonts*/
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.625rem;
     }
     h2{
-        font-size: 2.25rem;
+        font-size: 2.375rem;
     }
     h3 {
-        font-size: 1.438rem;
+        font-size: 1.563rem;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
     nav {
-        font-size: 0.875rem;
+        font-size: 1rem;
     } 
     input {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 
     /*header*/
@@ -129,16 +129,6 @@ body {
         font-size: 1.2rem;
     }
 
-    .header__logo-text:hover{
-        color: #ff6c00;
-        transition-duration: .25s;
-    }
-
-    .header__logo-text:active {
-        color: #e25e00;
-        transition-duration: .25s;
-    }
-
     .menu__icon {
         padding: 0 15px;
 
@@ -150,6 +140,10 @@ body {
     .header__menu-button-img {
         height: 10px;
         width: 20px;
+    }
+
+    .header__logo-github {
+        display: none;
     }
 
     /*noScroll*/
@@ -234,7 +228,8 @@ body {
     /*main*/
 
     .main {
-        margin: 10px 0;
+        max-width: 420px;
+        margin: 10px auto;
         padding: 10px;
 
         background-color: #fff;
@@ -257,14 +252,16 @@ body {
         align-items: center;
     }
 
-    .alpaca__container {
+    .alpaca__container_img {
         height: 100%;
         min-height: 290px;
 
         position: relative;
 
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .alpaca__container img {
@@ -318,6 +315,7 @@ body {
     .button:active {
         background-color: #e25e00;
         color: #fff;
+        font-weight: 400;
     }
 
     /*alpaca__configurator*/
@@ -353,12 +351,16 @@ body {
         background-color: #fff;
         border: 2px solid #4065e4;
 
+        transition: all 200ms ease 0s;
+
         color: #4065e4;
     }
 
     .alpaca__configurator-elements > button:active {
         background-color: #4065e4;
         border: 2px solid #4065e4;
+
+        transition: all 200ms ease 0s;
 
         color: #fff;
     }
@@ -392,6 +394,8 @@ body {
         background-color: #fff;
         border: 2px solid #4065e4;
 
+        transition: all 200ms ease 0s;
+
         color: #4065e4;
     }
 
@@ -399,10 +403,10 @@ body {
         background-color: #4065e4;
         border: 2px solid #4065e4;
 
+        transition: all 200ms ease 0s;
+
         color: #fff;
     }
-
-    
     
     /*hidden*/
 
@@ -411,46 +415,69 @@ body {
     }
 }
 
-
-
-
-
 @media (min-width: 480px) {
-    
+    /* Мне вроде и так нравится */
 }
-
-
-
-
-
-
-
-
 
 
 /*
     * TABLET
 */
 @media (min-width: 768px) {
-            /*fonts*/
-        h1 {
-            font-size: 2.625rem;
-        }
-        h2{
-            font-size: 2.375rem;
-        }
-        h3 {
-            font-size: 1.563rem;
-        }
-        p {
-            font-size: 1.125rem;
-        }
-        nav {
-            font-size: 1rem;
-        } 
-        input {
-            font-size: 1.125rem;
-        }
+    
+    /*header*/
+    .header {
+        width: 758px;
+        margin: auto;
+    }
+
+    /* menu*/
+
+    .menu {
+        display: none;
+    }
+
+    /*header*/
+
+    .header__logo-github {
+        display: block;
+        padding: 0 15px;
+    }
+
+    /*main*/
+
+    .main {
+        max-width: 758px;
+        padding: 25px;
+        margin-top: 25px;
+    }
+
+    /*alpaca*/
+
+    .alpaca {
+        margin: 20px 0;
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .alpaca__configurator-container {
+        align-items: flex-start;
+    }
+
+    .alpaca__configurator-elements {
+        justify-content: flex-start;
+    }
+
+    .alpaca__configurator-style {
+        justify-content: flex-start;
+    }
+
+        
 }
 
 @media (min-width: 1024px) {
