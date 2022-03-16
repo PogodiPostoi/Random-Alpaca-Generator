@@ -278,6 +278,10 @@ body {
         opacity: 0;
     }
 
+        /*button--active*/
+
+
+
     /*alpaca__buttons*/
 
     .alpaca__buttons {
@@ -337,7 +341,7 @@ body {
         gap: 5px;
     }
 
-    .alpaca__configurator-elements > button {
+    .button-config {
         padding: 10px 15px;
 
         background-color: #fff;
@@ -347,23 +351,23 @@ body {
         color: #4066e49f;
     }
 
-    .alpaca__configurator-elements > button:hover {
+    /* .button-config:hover {
         background-color: #fff;
         border: 2px solid #4065e4;
 
         transition: all 200ms ease 0s;
 
         color: #4065e4;
-    }
+    } */
 
-    .alpaca__configurator-elements > button:active {
+    /* .button-config:active {
         background-color: #4065e4;
         border: 2px solid #4065e4;
 
         transition: all 200ms ease 0s;
 
         color: #fff;
-    }
+    } */
 
     .alpaca__configurator-title {
         margin: 0 0 10px;
@@ -379,40 +383,20 @@ body {
         justify-content: center;
         gap: 5px;
     }
-
-    .alpaca__configurator-style > button {
-        padding: 10px 15px;
-
-        background-color: #fff;
-        border: 2px solid #4066e49f;
-        border-radius: 1.4rem;
-
-        color: #4066e49f;
-    }
-
-    .alpaca__configurator-style > button:hover {
-        background-color: #fff;
-        border: 2px solid #4065e4;
-
-        transition: all 200ms ease 0s;
-
-        color: #4065e4;
-    }
-
-    .alpaca__configurator-style > button:active {
-        background-color: #4065e4;
-        border: 2px solid #4065e4;
-
-        transition: all 200ms ease 0s;
-
-        color: #fff;
-    }
     
     /*hidden*/
 
     .hidden {
         display: none;
     }
+
+    .button--active {
+        background-color: #4065e4; 
+        border: 2px solid #4065e4;
+
+        color: #fff;
+    }
+
 }
 
 @media (min-width: 480px) {
