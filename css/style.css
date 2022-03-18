@@ -330,7 +330,7 @@ body {
         align-items: center;
     }
 
-    .alpaca__configurator-elements {
+    .alpaca__configurator-elements-container {
         width: 100%;
         max-width: 410px;
         margin: 0 0 20px;
@@ -383,6 +383,88 @@ body {
         justify-content: center;
         gap: 5px;
     }
+
+    /*alpaca__configurator-style-background*/
+
+    .alpaca__configurator-style-background {
+        width: 40px;
+        height: 40px;
+        border-radius: 1.4rem;
+    }
+
+    .alpaca__configurator-style-background--blue50 {
+        background: #f1f3f9 url("/img/backgrounds/blue50.png");
+    }
+
+    .alpaca__configurator-style-background--blue60 {
+        background: #f1f3f9 url("/img/backgrounds/blue60.png");
+    }
+    
+    .alpaca__configurator-style-background--blue70 {
+        background: #f1f3f9 url("/img/backgrounds/blue70.png");
+    }
+    
+    .alpaca__configurator-style-background--darkblue30 {
+        background: #f1f3f9 url("/img/backgrounds/darkblue30.png");
+    }
+    
+    .alpaca__configurator-style-background--darkblue50 {
+        background: #f1f3f9 url("/img/backgrounds/darkblue50.png");
+    }
+    
+    .alpaca__configurator-style-background--darkblue70 {
+        background: #f1f3f9 url("/img/backgrounds/darkblue70.png");
+    }
+    
+    .alpaca__configurator-style-background--green50 {
+        background: #f1f3f9 url("/img/backgrounds/green50.png");
+    }
+    
+    .alpaca__configurator-style-background--green60 {
+        background: #f1f3f9 url("/img/backgrounds/green60.png");
+    }
+    
+    .alpaca__configurator-style-background--green70 {
+        background: #f1f3f9 url("/img/backgrounds/green70.png");
+    }
+    
+    .alpaca__configurator-style-background--grey40 {
+        background: #f1f3f9 url("/img/backgrounds/grey40.png");
+    }
+    
+    .alpaca__configurator-style-background--grey70 {
+        background: #f1f3f9 url("/img/backgrounds/grey70.png");
+    }
+    
+    .alpaca__configurator-style-background--grey80 {
+        background: #f1f3f9 url("/img/backgrounds/grey80.png");
+    }
+    
+    .alpaca__configurator-style-background--red50 {
+        background: #f1f3f9 url("/img/backgrounds/red50.png");
+    }
+    
+    .alpaca__configurator-style-background--red60 {
+        background: #f1f3f9 url("/img/backgrounds/red60.png");
+    }
+    
+    .alpaca__configurator-style-background--red70 {
+        background: #f1f3f9 url("/img/backgrounds/red70.png");
+    }
+    
+    .alpaca__configurator-style-background--yellow50 {
+        background: #f1f3f9 url("/img/backgrounds/yellow50.png");
+    }
+    
+    .alpaca__configurator-style-background--yellow60 {
+        background: #f1f3f9 url("/img/backgrounds/yellow60.png");
+    }
+    
+    .alpaca__configurator-style-background--yellow70 {
+        background: #f1f3f9 url("/img/backgrounds/yellow70.png");
+    }
+    
+    
     
     /*hidden*/
 
@@ -453,7 +535,7 @@ body {
         align-items: flex-start;
     }
 
-    .alpaca__configurator-elements {
+    .alpaca__configurator-elements-container {
         justify-content: flex-start;
     }
 
