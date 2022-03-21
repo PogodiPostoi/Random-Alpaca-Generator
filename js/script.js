@@ -36,9 +36,9 @@ const configButtonActivator = (e) => {
 // Делаем "активный" стиль кнопки стилизации при нажатии
 const styleButtonActivator = (e, styleButtonArray) => {
     // Снимаем "активность" со всех кнопок  
-    styleButtonArray.forEach(j => j.classList.remove('button--active'))
+    styleButtonArray.forEach(j => j.classList.remove('button-style--active'))
     // Активируем кнопку по индексу массива
-    styleButtonArray[e].classList.add('button--active')
+    styleButtonArray[e].classList.add('button-style--active')
 }
 
 // Listeners для кнопок конфигуратора элементов
