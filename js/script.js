@@ -2,6 +2,7 @@
 
 const menu = document.getElementById('menu__toggle')
 
+const alpacaImages = Array.from(document.querySelectorAll('.alpaca__img'))
 const configElements = Array.from(document.querySelectorAll('.alpaca__configurator-elements'))
 const styleElements = Array.from(document.querySelectorAll('.alpaca__configurator-style'))
 const styleElementsHairArray = Array.from(document.querySelectorAll('.alpaca__configurator-style-hair'))
@@ -13,6 +14,15 @@ const styleElementsLegArray = Array.from(document.querySelectorAll('.alpaca__con
 const styleElementsAccessoriesArray = Array.from(document.querySelectorAll('.alpaca__configurator-style-accessories'))
 const styleElementsBackgroundArray = Array.from(document.querySelectorAll('.alpaca__configurator-style-background'))
 
+/*Объекты элементов для изменения картинки*/
+const hair = ['img/hair/default.png', 'img/hair/curls.png', 'img/hair/short.png', 'img/hair/bang.png', 'img/hair/elegant.png', 'img/hair/quiff.png']
+const ears = ['img/ears/default.png', 'img/ears/tilt-backward.png', 'img/ears/tilt-forward.png']
+const eyes = ['img/eyes/default.png', 'img/eyes/angry.png', 'img/eyes/naughty.png', 'img/eyes/panda.png', 'img/eyes/smart.png', 'img/eyes/star.png']
+const mouth = ['img/mouth/default.png', 'img/mouth/astonished.png', 'img/mouth/eating.png', 'img/mouth/laugh.png', 'img/mouth/tongue.png']
+const neck = ['img/neck/default.png', 'img/neck/bend-backward.png', 'img/neck/bend-forward.png', 'img/neck/thick.png']
+const leg = ['img/leg/default.png', 'img/leg/bubble-tea.png', 'img/leg/cookie.png', 'img/leg/game-console.png', 'img/leg/tilt-backward.png', 'img/leg/tilt-forward.png']
+const accessories = ['', 'img/accessories/flower.png', 'img/accessories/earings.png', 'img/accessories/headphone.png', 'img/accessories/glasses.png']
+const background = ['img/background/blue50.png', 'img/background/blue60.png', 'img/background/blue70.png', 'img/background/darkblue30.png', 'img/background/darkblue50.png', 'img/background/darkblue70.png', 'img/background/green50.png', 'img/background/green60.png', 'img/background/green70.png', 'img/background/grey40.png', 'img/background/grey70.png', 'img/background/grey80.png', 'img/background/red50.png', 'img/background/red60.png', 'img/background/red70.png', 'img/background/yellow50.png', 'img/background/yellow60.png', 'img/background/yellow70.png']
 
 // Бургер-меню. Запрет на скролл при активном меню
 menu.addEventListener('click', () =>  document.body.classList.toggle('noScroll'))
@@ -35,9 +45,7 @@ const configButtonActivator = (e) => {
 
 // Делаем "активный" стиль кнопки стилизации при нажатии
 const styleButtonActivator = (e, styleButtonArray) => {
-    // Снимаем "активность" со всех кнопок  
     styleButtonArray.forEach(j => j.classList.remove('button-style--active'))
-    // Активируем кнопку по индексу массива
     styleButtonArray[e].classList.add('button-style--active')
 }
 
@@ -48,57 +56,57 @@ for (let i = 0; i < configElements.length; i++) {
         // Открываем и скрываем стили
         styleActivator(i)
         // Стилизуем
-        styleButtonActivator(i, configElements)
+        configButtonActivator(i, configElements)
     })
 }
 
 // Стилизуем кнопки стилей и активируем соответствующий элемент на картинке
 for (let i = 0; i < styleElementsHairArray.length; i++) {
     styleElementsHairArray[i].addEventListener('click', () => {
-        // Стилизуем
         styleButtonActivator(i, styleElementsHairArray)
+        alpacaImages[2].setAttribute('src', hair[i])
     })
 }
 
 for (let i = 0; i < styleElementsEarsArray.length; i++) {
     styleElementsEarsArray[i].addEventListener('click', () => {
-        // Стилизуем
         styleButtonActivator(i, styleElementsEarsArray)
+        alpacaImages[3].setAttribute('src', ears[i])
     })
 }
 for (let i = 0; i < styleElementsEyesArray.length; i++) {
     styleElementsEyesArray[i].addEventListener('click', () => {
-        // Стилизуем
         styleButtonActivator(i, styleElementsEyesArray)
+        alpacaImages[5].setAttribute('src', eyes[i])
     })
 }
 for (let i = 0; i < styleElementsMouthArray.length; i++) {
     styleElementsMouthArray[i].addEventListener('click', () => {
-        // Стилизуем
         styleButtonActivator(i, styleElementsMouthArray)
+        alpacaImages[8].setAttribute('src', mouth[i])
     })
 }
 for (let i = 0; i < styleElementsNeckArray.length; i++) {
     styleElementsNeckArray[i].addEventListener('click', () => {
-        // Стилизуем
         styleButtonActivator(i, styleElementsNeckArray)
+        alpacaImages[4].setAttribute('src', neck[i])
     })
 }
 for (let i = 0; i < styleElementsLegArray.length; i++) {
     styleElementsLegArray[i].addEventListener('click', () => {
-        // Стилизуем
         styleButtonActivator(i, styleElementsLegArray)
+        alpacaImages[7].setAttribute('src', leg[i])
     })
 }
 for (let i = 0; i < styleElementsAccessoriesArray.length; i++) {
     styleElementsAccessoriesArray[i].addEventListener('click', () => {
-        // Стилизуем
         styleButtonActivator(i, styleElementsAccessoriesArray)
+        alpacaImages[1].setAttribute('src', accessories[i])
     })
 }
 for (let i = 0; i < styleElementsBackgroundArray.length; i++) {
     styleElementsBackgroundArray[i].addEventListener('click', () => {
-        // Стилизуем
         styleButtonActivator(i, styleElementsBackgroundArray)
+        alpacaImages[0].setAttribute('src', background[i])
     })
 }

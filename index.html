@@ -35,16 +35,16 @@
         <h1>Альпака генератор</h1>
         <div class="alpaca">
             <div class="alpaca__container">
-                <div class="alpaca__container_img">
-                    <img class="alpaca__img-background" src="img/backgrounds/blue70.png" alt="">
-                    <img class="alpaca__img-acessories" src="" alt="" >
-                    <img class="alpaca__img-hair" src="img/hair/default.png" alt="">
-                    <img class="alpaca__img-ears" src="img/ears/default.png" alt="">
-                    <img class="alpaca__img-neck" src="img/neck/default.png" alt="">
-                    <img class="alpaca__img-eyes" src="img/eyes/default.png" alt="">
-                    <img class="alpaca__img-nose" src="img/nose.png" alt="">
-                    <img class="alpaca__img-leg" src="img/leg/default.png" alt="">
-                    <img class="alpaca__img-mouth" src="img/mouth/default.png" alt="">
+                <div class="alpaca__container-img">
+                    <img class="alpaca__img alpaca__img--background" src="img/background/blue70.png" alt="">
+                    <img class="alpaca__img alpaca__img--acessories" src="" alt="" >
+                    <img class="alpaca__img alpaca__img--hair" src="img/hair/default.png" alt="">
+                    <img class="alpaca__img alpaca__img--ears" src="img/ears/default.png" alt="">
+                    <img class="alpaca__img alpaca__img--neck" src="img/neck/default.png" alt="">
+                    <img class="alpaca__img alpaca__img--eyes" src="img/eyes/default.png" alt="">
+                    <img class="alpaca__img alpaca__img--nose" src="img/nose.png" alt="">
+                    <img class="alpaca__img alpaca__img--leg" src="img/leg/default.png" alt="">
+                    <img class="alpaca__img alpaca__img--mouth" src="img/mouth/default.png" alt="">
                 </div>
                 <div class="alpaca__buttons">
                     <button class="button" id="random">Случайно</button>
@@ -72,7 +72,7 @@
                         Стиль
                     </h3>
                     <div class="alpaca__configurator-style">
-                        <button class="button-config alpaca__configurator-style-hair alpaca__configurator-style-hair--default button--active">Стандарт</button>
+                        <button class="button-config alpaca__configurator-style-hair alpaca__configurator-style-hair--default button-style--active">Стандарт</button>
                         <button class="button-config alpaca__configurator-style-hair alpaca__configurator-style-hair--curls">Кудрявые</button>
                         <button class="button-config alpaca__configurator-style-hair alpaca__configurator-style-hair--short">Короткие</button>
                         <button class="button-config alpaca__configurator-style-hair alpaca__configurator-style-hair--bang">Чёлка</button>
@@ -80,12 +80,12 @@
                         <button class="button-config alpaca__configurator-style-hair alpaca__configurator-style-hair--quiff">Укладка</button>
                     </div>
                     <div class="alpaca__configurator-style hidden">
-                        <button class="button-config alpaca__configurator-style-ears alpaca__configurator-style-ears--default button--active">Стандарт</button>
+                        <button class="button-config alpaca__configurator-style-ears alpaca__configurator-style-ears--default button-style--active">Стандарт</button>
                         <button class="button-config alpaca__configurator-style-ears alpaca__configurator-style-ears--tilt-backward">Назад</button>
                         <button class="button-config alpaca__configurator-style-ears alpaca__configurator-style-ears--tilt-forward">Вперёд</button>
                     </div>
                     <div class="alpaca__configurator-style hidden">
-                        <button class="button-config alpaca__configurator-style-eyes alpaca__configurator-style-eyes--default button--active">Стандарт</button>
+                        <button class="button-config alpaca__configurator-style-eyes alpaca__configurator-style-eyes--default button-style--active">Стандарт</button>
                         <button class="button-config alpaca__configurator-style-eyes alpaca__configurator-style-eyes--angry">Злые</button>
                         <button class="button-config alpaca__configurator-style-eyes alpaca__configurator-style-eyes--naughty">Озорные</button>
                         <button class="button-config alpaca__configurator-style-eyes alpaca__configurator-style-eyes--panda">Милые</button>
@@ -93,20 +93,20 @@
                         <button class="button-config alpaca__configurator-style-eyes alpaca__configurator-style-eyes--star">Звездочки</button>
                     </div>
                     <div class="alpaca__configurator-style hidden">
-                        <button class="button-config alpaca__configurator-style-mouth alpaca__configurator-style-mouth--default button--active">Стандарт</button>
+                        <button class="button-config alpaca__configurator-style-mouth alpaca__configurator-style-mouth--default button-style--active">Стандарт</button>
                         <button class="button-config alpaca__configurator-style-mouth alpaca__configurator-style-mouth--astonished">Удивленный</button>
                         <button class="button-config alpaca__configurator-style-mouth alpaca__configurator-style-mouth--eating">Жующий</button>
                         <button class="button-config alpaca__configurator-style-mouth alpaca__configurator-style-mouth--laugh">Смеющийся</button>
                         <button class="button-config alpaca__configurator-style-mouth alpaca__configurator-style-mouth--tongue">Язык</button>
                     </div>
                     <div class="alpaca__configurator-style hidden">
-                        <button class="button-config alpaca__configurator-style-neck alpaca__configurator-style-neck--default button--active">Стандарт</button>
+                        <button class="button-config alpaca__configurator-style-neck alpaca__configurator-style-neck--default button-style--active">Стандарт</button>
                         <button class="button-config alpaca__configurator-style-neck alpaca__configurator-style-neck--bend-backward">Назад</button>
                         <button class="button-config alpaca__configurator-style-neck alpaca__configurator-style-neck--bend-forward">Вперед</button>
                         <button class="button-config alpaca__configurator-style-neck alpaca__configurator-style-neck--thick">Массивная</button>
                     </div>
                     <div class="alpaca__configurator-style hidden">
-                        <button class="button-config alpaca__configurator-style-leg alpaca__configurator-style-leg--default button--active">Стандарт</button>
+                        <button class="button-config alpaca__configurator-style-leg alpaca__configurator-style-leg--default button-style--active">Стандарт</button>
                         <button class="button-config alpaca__configurator-style-leg alpaca__configurator-style-leg--bubble-tea">Чай</button>
                         <button class="button-config alpaca__configurator-style-leg alpaca__configurator-style-leg--cookie">Печенье</button>
                         <button class="button-config alpaca__configurator-style-leg alpaca__configurator-style-leg--game-console">Приставка</button>
@@ -114,14 +114,14 @@
                         <button class="button-config alpaca__configurator-style-leg alpaca__configurator-style-leg--tilt-forward">Вперёд</button>
                     </div>
                     <div class="alpaca__configurator-style hidden">
-                        <button class="button-config alpaca__configurator-style-accessories alpaca__configurator-style-accessories--none button--active">Нет</button>
+                        <button class="button-config alpaca__configurator-style-accessories alpaca__configurator-style-accessories--none button-style--active">Нет</button>
                         <button class="button-config alpaca__configurator-style-accessories alpaca__configurator-style-accessories--flower">Цветок</button>
                         <button class="button-config alpaca__configurator-style-accessories alpaca__configurator-style-accessories--earing">Серьга</button>
                         <button class="button-config alpaca__configurator-style-accessories alpaca__configurator-style-accessories--headphone">Наушники</button>
                         <button class="button-config alpaca__configurator-style-accessories alpaca__configurator-style-accessories--glasses">Очки</button>
                     </div>
                     <div class="alpaca__configurator-style hidden">
-                        <div class="alpaca__configurator-style-background alpaca__configurator-style-background--blue50"></div>
+                        <div class="alpaca__configurator-style-background alpaca__configurator-style-background--blue50 button-style--active"></div>
                         <div class="alpaca__configurator-style-background alpaca__configurator-style-background--blue60"></div>
                         <div class="alpaca__configurator-style-background alpaca__configurator-style-background--blue70"></div>
                         <div class="alpaca__configurator-style-background alpaca__configurator-style-background--darkblue30"></div>

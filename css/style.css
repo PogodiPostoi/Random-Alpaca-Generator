@@ -254,7 +254,7 @@ body {
         align-items: center;
     }
 
-    .alpaca__container_img {
+    .alpaca__container-img {
         height: 100%;
         min-height: 290px;
 
@@ -266,7 +266,7 @@ body {
         align-items: center;
     }
 
-    .alpaca__container img {
+    .alpaca__img {
         width: auto;
         height: 100%;
         position: absolute;
@@ -276,13 +276,29 @@ body {
         justify-content: center;
     }
 
-    .alpaca__img-acessories {
-        opacity: 0;
+    .alpaca__img--background {
+        z-index: 0;
     }
 
-        /*button--active*/
+    .alpaca__img--neck,
+    .alpaca__img--leg {
+        z-index: 1;
+    }
 
+    .alpaca__img--ears,
+    .alpaca__img--nose,
+    .alpaca__img--mouth {
+        z-index: 2;
+    }
 
+    .alpaca__img--hair,
+    .alpaca__img--eyes {
+        z-index: 3;
+    }
+
+    .alpaca__img--acessories {
+        z-index: 4;
+    }
 
     /*alpaca__buttons*/
 
@@ -395,75 +411,75 @@ body {
     }
 
     .alpaca__configurator-style-background--blue50 {
-        background: #f1f3f9 url("img/backgrounds/blue50.png");
+        background: #f1f3f9 url("/img/background/blue50.png");
     }
 
     .alpaca__configurator-style-background--blue60 {
-        background: #f1f3f9 url("img/backgrounds/blue60.png");
+        background: #f1f3f9 url("/img/background/blue60.png");
     }
     
     .alpaca__configurator-style-background--blue70 {
-        background: #f1f3f9 url("img/backgrounds/blue70.png");
+        background: #f1f3f9 url("/img/background/blue70.png");
     }
     
     .alpaca__configurator-style-background--darkblue30 {
-        background: #f1f3f9 url("img/backgrounds/darkblue30.png");
+        background: #f1f3f9 url("/img/background/darkblue30.png");
     }
     
     .alpaca__configurator-style-background--darkblue50 {
-        background: #f1f3f9 url("img/backgrounds/darkblue50.png");
+        background: #f1f3f9 url("/img/background/darkblue50.png");
     }
     
     .alpaca__configurator-style-background--darkblue70 {
-        background: #f1f3f9 url("img/backgrounds/darkblue70.png");
+        background: #f1f3f9 url("/img/background/darkblue70.png");
     }
     
     .alpaca__configurator-style-background--green50 {
-        background: #f1f3f9 url("img/backgrounds/green50.png");
+        background: #f1f3f9 url("/img/background/green50.png");
     }
     
     .alpaca__configurator-style-background--green60 {
-        background: #f1f3f9 url("img/backgrounds/green60.png");
+        background: #f1f3f9 url("/img/background/green60.png");
     }
     
     .alpaca__configurator-style-background--green70 {
-        background: #f1f3f9 url("img/backgrounds/green70.png");
+        background: #f1f3f9 url("/img/background/green70.png");
     }
     
     .alpaca__configurator-style-background--grey40 {
-        background: #f1f3f9 url("img/backgrounds/grey40.png");
+        background: #f1f3f9 url("/img/background/grey40.png");
     }
     
     .alpaca__configurator-style-background--grey70 {
-        background: #f1f3f9 url("img/backgrounds/grey70.png");
+        background: #f1f3f9 url("/img/background/grey70.png");
     }
     
     .alpaca__configurator-style-background--grey80 {
-        background: #f1f3f9 url("img/backgrounds/grey80.png");
+        background: #f1f3f9 url("/img/background/grey80.png");
     }
     
     .alpaca__configurator-style-background--red50 {
-        background: #f1f3f9 url("img/backgrounds/red50.png");
+        background: #f1f3f9 url("/img/background/red50.png");
     }
     
     .alpaca__configurator-style-background--red60 {
-        background: #f1f3f9 url("img/backgrounds/red60.png");
+        background: #f1f3f9 url("/img/background/red60.png");
     }
     
     .alpaca__configurator-style-background--red70 {
-        background: #f1f3f9 url("img/backgrounds/red70.png");
+        background: #f1f3f9 url("/img/background/red70.png");
     }
     
     .alpaca__configurator-style-background--yellow50 {
-        background: #f1f3f9 url("img/backgrounds/yellow50.png");
+        background: #f1f3f9 url("/img/background/yellow50.png");
     }
     
     .alpaca__configurator-style-background--yellow60 {
-        background: #f1f3f9 url("img/backgrounds/yellow60.png");
+        background: #f1f3f9 url("/img/background/yellow60.png");
     }
     
     .alpaca__configurator-style-background--yellow70 {
-        background: #f1f3f9 url("img/backgrounds/yellow70.png");
+        background: #f1f3f9 url("/img/background/yellow70.png");
     }
     
     
