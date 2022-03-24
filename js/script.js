@@ -1,8 +1,5 @@
 //  reference: https://github.com/Samuel-Abusa/Alpaca-Generator
 
-
-
-
 const menu = document.getElementById('menu__toggle')
 
 const alpacaImages = Array.from(document.querySelectorAll('.alpaca__img'))
@@ -155,9 +152,9 @@ downloadButton.addEventListener('click', function () {
         .then((canvas) => {
             let a = document.createElement('a');
             a.href = canvas
-                .toDataURL('image/jpeg')
-                .replace('image/jpeg', 'image/octet-stream');
-            a.download = 'Alpaca.jpg';
+                .toDataURL('image/png')
+                .replace('image/png', 'image/octet-stream');
+            a.download = 'Alpaca.png';
             a.click();
     });
   });
