@@ -1,5 +1,6 @@
 //  reference: https://github.com/Samuel-Abusa/Alpaca-Generator
 
+
 const menu = document.getElementById('menu__toggle')
 
 const alpacaImages = Array.from(document.querySelectorAll('.alpaca__img'))
@@ -147,6 +148,26 @@ randomButton.addEventListener('click', () => {
 
 // Кнопка сохранения
 
+// downloadButton.addEventListener('click', function () {
+//     html2canvas(document.querySelector('.alpaca__container-img'))
+//         .then((canvas) => {
+//             let a = document.createElement('a');
+//             a.href = canvas
+//                 .toDataURL('image/png')
+//                 .replace('image/png', 'image/octet-stream');
+//             a.download = 'Alpaca.png';
+//             a.click();
+//     });
+//   });
+
+
+// downloadButton.addEventListener('click', function () {
+//     let canvas = document.querySelector('.alpaca__container-img')
+//     canvas.toBlob(function(blob) {
+//         saveAs(blob, 'pretty image.png')
+//     })
+// })
+
 downloadButton.addEventListener('click', function () {
     html2canvas(document.querySelector('.alpaca__container-img'))
         .then((canvas) => {
@@ -154,8 +175,6 @@ downloadButton.addEventListener('click', function () {
             a.href = canvas
                 .toDataURL('image/png')
                 .replace('image/png', 'image/octet-stream');
-            a.download = 'Alpaca.png';
-            a.click();
+            saveAs(a.href, 'pretty image.png')
     });
   });
-
