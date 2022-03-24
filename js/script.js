@@ -154,7 +154,6 @@ downloadButton.addEventListener('click', function () {
             let a = document.createElement('a');
             a.href = canvas
                 .toDataURL('image/png')
-                .replace('image/png', 'image/octet-stream');
             a.download = 'Your alpaca.png';
             a.click();
     });
