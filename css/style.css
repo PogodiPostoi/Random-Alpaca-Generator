@@ -279,12 +279,12 @@ body {
         z-index: 0;
     }
 
+    .alpaca__img--ears,
     .alpaca__img--neck,
     .alpaca__img--leg {
         z-index: 1;
     }
 
-    .alpaca__img--ears,
     .alpaca__img--nose,
     .alpaca__img--mouth {
         z-index: 2;
