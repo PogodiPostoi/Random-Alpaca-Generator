@@ -155,20 +155,9 @@ downloadButton.addEventListener('click', function () {
             a.href = canvas
                 .toDataURL('image/png')
                 .replace('image/png', 'image/octet-stream');
-            a.download = 'Alpaca.png';
+            a.download = 'Your alpaca.png';
             a.click();
     });
   });
 
 
-
-// downloadButton.addEventListener('click', function () {
-//     html2canvas(document.querySelector('.alpaca__container-img'))
-//         .then((canvas) => {
-//             let a = document.createElement('a');
-//             a.href = canvas
-//                 .toDataURL('image/png')
-//                 .replace('image/png', 'image/octet-stream');
-//             saveAs(a.href, 'pretty image.png')
-//     });
-//   });
