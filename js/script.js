@@ -149,22 +149,10 @@ randomButton.addEventListener('click', () => {
 // Кнопка сохранения
 
 downloadButton.addEventListener('click', function () {
-    // ? Тут реализация через скачивание
-    // html2canvas(document.querySelector('.alpaca__container-img'))
-    //     .then((canvas) => {
-    //         let a = document.createElement('a');
-    //         a.href = canvas
-            
-    //             .toDataURL('image/png')
-    //             console.log(canvas)
-    //         // a.download = 'Your alpaca.png';
-    //         a.target = "_blank"
-    //         console.log(a)
-    //         setTimeout(() => a.click())
-    // });
 
-    // ? Тут реализация через выведение в отдельную картинку
-    html2canvas(document.querySelector('.alpaca__container-img'))
+    if (navigator.userAgent.match('CriOS') == 'true') {
+        // ? Тут реализация через выведение в отдельную картинку
+        html2canvas(document.querySelector('.alpaca__container-img'))
         .then((canvas) => {
             let a = document.createElement('img');
             document.body.appendChild(a)
@@ -175,6 +163,19 @@ downloadButton.addEventListener('click', function () {
             newWindow.document.write('<img src="' + src + '" alt="from old image" />')
             document.body.removeChild(a)
         });
+    } else {
+    // ? Тут реализация через скачивание
+        html2canvas(document.querySelector('.alpaca__container-img'))
+        .then((canvas) => {
+            let a = document.createElement('a');
+            a.href = canvas
+                .toDataURL('image/png')
+            a.download = 'Your alpaca.png';
+            a.target = "_blank"
+            setTimeout(() => a.click())
+        });
+    }
+
   });
 
 
