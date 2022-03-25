@@ -156,13 +156,17 @@ downloadButton.addEventListener('click', function () {
             a.href = canvas
                 .toDataURL('image/png')
             a.download = 'Your alpaca.png';
-            a.click();
+            setTimeout(() => a.click())
     });
 
     // ? Тут реализация через выведение в отдельную картинку
     // html2canvas(document.querySelector('.alpaca__container-img'))
     //     .then((canvas) => {
-    //     document.body.appendChild(canvas);
+    //         let a = canvas
+    //             .toDataURL('image/png')
+    //         console.log(a)
+    //         window.open(a, '_blank')
+    //     // document.body.appendChild(canvas);
     //     });
   });
 
