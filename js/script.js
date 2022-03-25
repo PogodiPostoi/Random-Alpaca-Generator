@@ -150,7 +150,7 @@ randomButton.addEventListener('click', () => {
 
 downloadButton.addEventListener('click', function () {
 
-    if (navigator.userAgent.match('CriOS') == 'true') {
+    if (navigator.userAgent.match('CriOS')) {
         // ? Тут реализация через выведение в отдельную картинку
         html2canvas(document.querySelector('.alpaca__container-img'))
         .then((canvas) => {
