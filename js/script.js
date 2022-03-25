@@ -149,6 +149,7 @@ randomButton.addEventListener('click', () => {
 // Кнопка сохранения
 
 downloadButton.addEventListener('click', function () {
+    // ? Тут реализация через скачивание
     html2canvas(document.querySelector('.alpaca__container-img'))
         .then((canvas) => {
             let a = document.createElement('a');
@@ -157,6 +158,12 @@ downloadButton.addEventListener('click', function () {
             a.download = 'Your alpaca.png';
             a.click();
     });
+
+    // ? Тут реализация через выведение в отдельную картинку
+    // html2canvas(document.querySelector('.alpaca__container-img'))
+    //     .then((canvas) => {
+    //     document.body.appendChild(canvas);
+    //     });
   });
 
 
