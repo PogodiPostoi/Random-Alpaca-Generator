@@ -150,24 +150,31 @@ randomButton.addEventListener('click', () => {
 
 downloadButton.addEventListener('click', function () {
     // ? Тут реализация через скачивание
-    html2canvas(document.querySelector('.alpaca__container-img'))
-        .then((canvas) => {
-            let a = document.createElement('a');
-            a.href = canvas
-                .toDataURL('image/png')
-            a.download = 'Your alpaca.png';
-            setTimeout(() => a.click())
-    });
-
-    // ? Тут реализация через выведение в отдельную картинку
     // html2canvas(document.querySelector('.alpaca__container-img'))
     //     .then((canvas) => {
-    //         let a = canvas
+    //         let a = document.createElement('a');
+    //         a.href = canvas
+            
     //             .toDataURL('image/png')
+    //             console.log(canvas)
+    //         // a.download = 'Your alpaca.png';
+    //         a.target = "_blank"
     //         console.log(a)
-    //         window.open(a, '_blank')
-    //     // document.body.appendChild(canvas);
-    //     });
+    //         setTimeout(() => a.click())
+    // });
+
+    // ? Тут реализация через выведение в отдельную картинку
+    html2canvas(document.querySelector('.alpaca__container-img'))
+        .then((canvas) => {
+            let a = document.createElement('img');
+            document.body.appendChild(a)
+            a.classList.add('hidden')
+            a.src = canvas.toDataURL('image/png')
+            let src = a.src
+            let newWindow = window.open('about:blank', 'new image')
+            newWindow.document.write('<img src="' + src + '" alt="from old image" />')
+            document.body.removeChild(a)
+        });
   });
 
 
